@@ -1,0 +1,9 @@
+.hidden {
+  display: none !important;
+}
+
+.translated-en {
+  margin-top: 0 !important;
+  border-top-style: dashed;
+  border-top-width: 1px;
+}
