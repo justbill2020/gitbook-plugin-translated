@@ -31,7 +31,7 @@ require(["gitbook", "jQuery"], function (gitbook, $) {
         // 获取子节点名称列表并按从小到大排序
         var cnChildNames = getNames(cnChildNodes)
         var enChildNames = getNames(enChildNodes)
-        var isSameChild = cnChildNodeNames.every(function (name, index) {
+        var isSameChild = cnChildNames.every(function (name, index) {
           return cnChildNames[index] === enChildNames[index]
         })
         if (!isSameChild) { return }
