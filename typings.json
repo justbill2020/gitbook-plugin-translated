@@ -1,0 +1,9 @@
+{
+  "name": "gitbook-plugin-translated",
+  "dependencies": {
+    "cheerio": "registry:npm/cheerio#0.20.0+20160422172414"
+  },
+  "globalDependencies": {
+    "jquery": "registry:dt/jquery#1.10.0+20160704162008"
+  }
+}

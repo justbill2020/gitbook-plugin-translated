@@ -1,6 +1,44 @@
 {
-  "version": "0.0.4",
-  "author": "",
+  "name": "gitbook-plugin-translated",
+  "description": "根据指定匹配模式切换显示两种语言",
+  "version": "0.1.0",
+  "main": "./out/index",
+  "scripts": {
+    "postinstall": "typings install",
+    "build": "tsc",
+    "lint": "tslint",
+    "watch": "tsc --watch"
+  },
+  "keywords": [
+    "gitbook",
+    "gitbook-plugin",
+    "gitbook-plugin-translated"
+  ],
+  "gitbook": {
+    "properties": {
+      "regexp": {
+        "type": "string",
+        "default": "/[\u4e00-\u9fa5]/gi",
+        "description": "匹配译文的完整正则表达式（默认：中文）"
+      },
+      "tags": {
+        "type": "array",
+        "default": [
+          "h1",
+          "h2",
+          "h3",
+          "h4",
+          "h5",
+          "h6",
+          "p",
+          "ol",
+          "ul",
+          "table"
+        ],
+        "description": "需要被 translated 处理的标签"
+      }
+    }
+  },
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -10,13 +48,15 @@
     "url": "https://github.com/looch/gitbook-plugin-translated/issues"
   },
   "homepage": "https://github.com/looch/gitbook-plugin-translated#readme",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "main": "index.js",
   "engines": {
-    "gitbook": ">=3.x.x"
+    "gitbook": "<=3.1.1"
   },
-  "name": "gitbook-plugin-translated",
-  "description": "gitbook 中英文对照插件"
+  "devDependencies": {
+    "tslint": "latest",
+    "typescript": "latest",
+    "typings": "latest"
+  },
+  "dependencies": {
+    "cheerio": "^0.20.0"
+  }
 }
