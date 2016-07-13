@@ -71,6 +71,9 @@ Configure `book.json`:
 ```
 
 ```markdown
+我能吞下玻璃而不伤身体。
+
+I can eat glass, it doesn't hurt me.
 ```
 
 ![chinese-with-english](./cte.gif)
