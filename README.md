@@ -1,3 +1,5 @@
+> ** 建议拷贝本 [README.md](https://raw.githubusercontent.com/looch/gitbook-plugin-translated/master/README.md) 的 raw 内容，用于开始测试并理解本插件的工作行为。**
+
 > This page is all English [translation by Google](https://translate.google.com/)
 
 > 本页面所有英文[通过谷歌翻译](https://translate.google.com/)
